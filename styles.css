@@ -50,12 +50,11 @@ body {
 .zero {
   grid-column: span 2; 
 }
-
-.sign {
-  background-color: #4caf50;
-  color: #fff;
+.button:hover {
+  background-color: #dddddda7;
 }
 
-.equal:hover {
-  background-color: #45a049;
+.sign {
+  background-color: #f89f10;
+  color: #fff;
 }

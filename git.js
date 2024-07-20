@@ -93,5 +93,5 @@ git branch // 브랜치 목록
 git branch 브랜치명 // 브랜치 생성
 git switch 브랜치명 // 생성한 브랜치 이동
 git switch -c 브랜치명 // 브랜치 생성과 동시에 이동
-git branch -d 브랜치명 // 브랜치 삭제
+git branch -D 브랜치명 // 브랜치 삭제
 git branch -m 브랜치명 새로운브랜치명 // 브랜치 이름 바꾸기

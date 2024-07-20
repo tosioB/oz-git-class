@@ -97,6 +97,15 @@ git branch -D 브랜치명 // 브랜치 삭제
 git branch -m 브랜치명 새로운_브랜치명 // 브랜치 이름 바꾸기
 
 
+// ----- rebase ----- //
+git rebase main // 현재 브랜치의 커밋들을 다른 브랜치 위로 옮기거나 병합
+// 예시)
+// 1. git switch rebase할_브랜치명
+// 2. git rebase main
+// 3. git switch main
+// 4. git merge "rebase한_브랜치명"
+
+
 // ----- merge ----- //
 git merge 합치고싶은_브랜치 // 다른 브랜치의 변경 사항을 현재 브랜치에 통합
 // 예시)

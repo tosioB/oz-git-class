@@ -55,4 +55,7 @@ git reset "파일명" // 지정된 파일의 Staging Area에서의 변경 사항
 git rm --cached "Stagin Area에 추가된 파일명" // Git에서 추적을 중단하고 Staging Area에서 파일을 제거
 
 
-
+// ----- commit ----- //
+git commit -m "커밋 메시지" // Staging Area에 있는 파일들의 변경 사항을 새로운 커밋으로 저장
+git commit -am "커밋 메시지" // 수정된 모든 파일을 Staging Area에 추가하고, 그 변경 사항들을 새로운 커밋으로 저장
+git log // 저장소의 커밋 이력을 보여줌

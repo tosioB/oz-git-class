@@ -100,10 +100,10 @@ git branch -m 브랜치명 새로운_브랜치명 // 브랜치 이름 바꾸기
 // ----- rebase ----- //
 git rebase main // 현재 브랜치의 커밋들을 다른 브랜치 위로 옮기거나 병합
 // 예시)
-// 1. git switch rebase할_브랜치명
+// 1. git switch rebase할_브랜치명(rebase할 브랜치로 이동)
 // 2. git rebase main
 // 3. git switch main
-// 4. git merge "rebase한_브랜치명"
+// 4. git merge rebase한_브랜치명
 
 
 // ----- merge ----- //
@@ -112,3 +112,11 @@ git merge 합치고싶은_브랜치 // 다른 브랜치의 변경 사항을 현�
 // 1. main 브랜치로 이동
 // 2. git merge 합치고싶은_브랜치
 // 3. 병합이 된 브랜치는 삭제
+
+
+// ----- cherry-pick ----- //
+git cherry-pick 해시값 // 다른 브랜치에서 특정 커밋을 현재 작업 중인 브랜치로 가져오는 Git 명령어
+
+
+// merge를 이용한 충돌 해결 방법
+// rebase를 이용한 충돌 해결 방법

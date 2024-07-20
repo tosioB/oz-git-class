@@ -1,6 +1,8 @@
 # yaml 확장자 - JSON과 같은 데이터 형식 python의 dict자료형 처럼 key, value 형태로 저장됨
 team : oz_back
 
+reader : 연경
+
 member :
 - 장군
 - 다훈

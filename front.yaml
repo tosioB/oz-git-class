@@ -1,0 +1,7 @@
+# yaml 확장자 - JSON과 같은 데이터 형식 python의 dict자료형 처럼 key, value 형태로 저장됨
+tram : oz_front
+
+member :
+- 다경
+- 주빈
+- 여빈

@@ -1,0 +1,14 @@
+# .gitignore(파일)
+# Git이 추적하지 않아야 하는 파일이나 디렉토리를 설정하는 파일
+# 이 파일을 사용하여 Git이 특정 파일이나 패턴을 무시하도록 지시
+# 주로 개발 중에 생성되는 임시 파일이나 로그 파일, 컴파일된 코드, 설정 파일 등을 Git 저장소에서 제외할 때 유용하게 사용
+
+# .gitignore에 파일명.확장자 를 등록하면 add되지 않는다.
+
+# admin_info.yaml 파일 add X
+admin_info.yaml
+
+# *.yaml - 모든 yaml로 끝나는 확장자는 add X
+# !not_file_name.yaml - yaml 확장자지만 무시하지 않을 파일
+# folder_file_name - folder_file_name이란 이름의 파일 또는 폴더 add X
+# folder_file_name/ - folder_file_name이란 폴더를 포함하는 밑에 있는 모든 파일들 add X

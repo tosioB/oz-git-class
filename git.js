@@ -127,19 +127,18 @@ git pull // 원격 저장소에서 최신 변경 사항을 가져와 현재 작�
 
 
 // merge를 이용한 충돌 해결 방법
-// 
+// 1. git switch main - 메인으로 이동
+// 2. git merge 머지를_진행할_브랜치명(충돌이 나면 파일 리스트에 빨강색 표시가 생김)
+// 3. 충돌이 난 파일을 열어보면 head와 브랜치 충돌 영역이 나오고 바꿔야 할 곳을 선택 후 저장
+// 4. git status > git add . > git commit(입력창) > 입력창 나가기(ESC :qw)
+// 5. 변경에 사용한 브랜치 삭제
 
 // rebase를 이용한 충돌 해결 방법
-
-
-
-// ----- tag ----- //
-git tag v2.0.0 // 가장 최신 커밋에 v2.0.0 태그가 달림(git log로 확인 가능)
-git tag -d v2.0.0 // v2.0.0의 태그 삭제
-git show v2.0.0 // v2.0.0의 태그를 가지고 있는 커밋의 정보를 볼 수 있다.
-git tag -a v2.0.0 // 마지막 커밋에 v2.0.0 태그 달기(입력창 나옴)
-git tag v2.0.0 -m "메시지" // 마지막 커밋에 v2.0.0 태그 달기
-git tag v1.0.0 해시값 -m "메시지" // 원하는 커밋에 v1.0.0 태그 달기
-git tag -l 'v1.*' // v1로 시작하는 태그 찾기
-git tag -l '*0' // 0으로로 끝나는 태그 찾기
-git checkout v1.2.1 // v1.2.1으로 헤드가 이동
+// 1. git switch rebase할_브랜치이동
+// 2. git rebase main - 메인으로 rebase하기
+// 3. 빨강으로 표시된 충돌이난 파일 찾아가기
+// 4. 충돌이 난 파일을 열어보면 head와 브랜치 충돌 영역이 나오고 바꿔야 할 곳을 선택 후 저장
+// 5. git status > git add .
+// 6. git rebase --continue - 입력하면 다른 곳 충돌도 확인(입력창이 뜬다면 ESC :qw)
+// 7. git switch main - 메인으로 이동
+// 8. git merge 머지를_진행할_브랜치명

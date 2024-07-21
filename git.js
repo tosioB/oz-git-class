@@ -96,8 +96,15 @@ git switch -c 브랜치명 // 브랜치 생성과 동시에 이동
 git branch -D 브랜치명 // 브랜치 삭제
 git branch -m 브랜치명 새로운_브랜치명 // 브랜치 이름 바꾸기
 git branch -a // 원격에 연결되어있는 브랜치 모두 보기
-git switch -t origin "원격에서_새로_만든_브랜치명" // 원격에서 새로 만든 브랜치를 로컬에 만들고 새 브랜치로 이동
 git push origin --delete 삭제할_브랜치명 // 원격에 있는 브랜치 삭제
+// 원격에 브랜치 등록하기
+// 1. git fetch
+// 2. git pull
+// 3. git branch "생성할_브랜치명"
+// 4. 작업
+// 5. git status - git add . - git status - git commit -m "커밋 메시지"
+// 6. git push origin "생성할_브랜치명"
+
 
 
 // ----- rebase ----- //

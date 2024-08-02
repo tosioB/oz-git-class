@@ -149,3 +149,5 @@ git pull // 원격 저장소에서 최신 변경 사항을 가져와 현재 작�
 // 6. git rebase --continue - 입력하면 다른 곳 충돌도 확인(입력창이 뜬다면 ESC :qw)
 // 7. git switch main - 메인으로 이동
 // 8. git merge 머지를_진행할_브랜치명
+
+// 깃 연결 확인
